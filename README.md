@@ -245,7 +245,7 @@ The dashboard can be extended to answer questions such as:
 
 ------------------------------------------------------------------------
 
-## 📊 Suggested Power BI Measures
+## 📊 Power BI Measures
 
 ### Total Employees
 
