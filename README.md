@@ -109,15 +109,6 @@ largest employee population.
 > **Business implication:** Because R&D has the largest employee base,
 > even a moderate attrition rate in this department could create a
 > significant number of employee exits and replacement costs.
-
-⚠️ **Dashboard note:** The visual is titled **"Attrition by
-Department"**, but the percentages shown add up to the total workforce
-distribution rather than the distribution of the 237 attrition cases.
-For a true attrition-by-department analysis, use:
-
-``` text
-Department Attrition Rate =
-Department Attrition Count / Department Employee Count × 100
 ```
 
 ------------------------------------------------------------------------
