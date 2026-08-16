@@ -1,683 +1,351 @@
-# 📊 HR Analytics Dashboard --- Employee Attrition & Workforce Analysis
+# 👥 HR Workforce Analytics Dashboard
 
-<img width="1013" height="755" alt="HR Workforce Dashboard" src="https://github.com/user-attachments/assets/f9dad69f-316f-4adf-ab84-9de3d6555f63" />
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?style=for-the-badge\&logo=powerbi)
+![DAX](https://img.shields.io/badge/DAX-Measures-blue?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/Power%20Query-ETL-green?style=for-the-badge)
+![HR Analytics](https://img.shields.io/badge/Domain-HR%20Analytics-purple?style=for-the-badge)
 
 ## 📌 Project Overview
 
-This **HR Analytics Dashboard** is an interactive Power BI dashboard
-designed to provide an executive-level view of workforce composition,
-employee demographics, and attrition.
+The **HR Workforce Analytics Dashboard** is an interactive Power BI business intelligence solution designed to provide management with a comprehensive view of **employee workforce composition, attrition, demographics, education, age distribution, and gender diversity**.
 
-The dashboard helps HR and business stakeholders understand:
+The dashboard transforms employee-level HR data into actionable workforce insights that can support **employee retention, workforce planning, talent management, diversity analysis, and HR decision-making**.
 
--   Total workforce size and active employees
--   Overall employee attrition
--   Workforce distribution by department
--   Employee age distribution
--   Gender composition
--   Educational background
--   Age-band and gender composition
-
-The project demonstrates an end-to-end **HR Analytics / Business
-Intelligence** use case using Power BI, DAX, Power Query, data modeling,
-and interactive visualization.
-
-------------------------------------------------------------------------
+---
 
 ## 🎯 Business Objective
 
-The primary objective is to transform employee-level HR data into
-actionable insights that can support:
+The primary objective of this project is to help HR leadership answer critical workforce questions:
 
--   Workforce planning
--   Employee retention
--   Attrition monitoring
--   Talent management
--   Diversity analysis
--   Workforce segmentation
--   HR decision-making
+* How large is the current workforce?
+* What percentage of employees have left the organization?
+* Which departments have the highest workforce concentration?
+* What is the organization's age distribution?
+* Which age groups represent the largest workforce segments?
+* What is the male-to-female workforce distribution?
+* Which educational backgrounds dominate the workforce?
+* How is gender distributed across different age bands?
+* Which workforce segments may require deeper attrition analysis?
+* How can HR teams use workforce demographics for better planning?
 
-The dashboard is designed to answer the most important question:
+---
 
-> **"What does our workforce look like, how much attrition are we
-> experiencing, and which employee segments require deeper
-> investigation?"**
+## 📊 Dashboard Overview
 
-------------------------------------------------------------------------
+The dashboard contains the following major KPI cards and visualizations:
 
-## 📈 Executive KPI Summary
+### 🔹 Key KPIs
 
-  ------------------------------------------------------------------------
-  KPI                                          Value Business Meaning
-  --------------------- ---------------------------- ---------------------
-  **Total Employee                         **1,470** Total employees
-  Count**                                            represented in the
-                                                     dataset
+| KPI                  |      Value |
+| -------------------- | ---------: |
+| Total Employees      |  **1,470** |
+| Attrition Count      |    **237** |
+| Attrition Rate       | **16.12%** |
+| Active Employees     |  **1,233** |
+| Average Employee Age |     **37** |
 
-  **Attrition Count**                        **237** Employees who have
-                                                     exited
+### 🔹 Dashboard Visuals
 
-  **Attrition Rate**                      **16.12%** Overall percentage of
-                                                     employees who exited
+1. **Employee Distribution by Department**
+2. **Employee Count by Age**
+3. **Employee Distribution by Gender**
+4. **Employee Count by Education**
+5. **Employee Count by Age Band & Gender**
+6. **Education Filter**
+7. Workforce-level KPI cards
 
-  **Active Employees**                     **1,233** Employees remaining
-                                                     active
+---
 
-  **Average Age**                       **37 years** Average employee age
-  ------------------------------------------------------------------------
+## 🔎 Key Business Insights
 
-### Attrition Rate
+### 1. Workforce Size & Attrition
 
-The dashboard reports an attrition rate of **16.12%**.
+The organization has **1,470 employees**, with **237 employees recorded as attrition**, resulting in an overall attrition rate of approximately **16.12%**.
 
-``` text
-Attrition Rate =
-Attrition Count / Total Employee Count × 100
+This indicates that employee retention should be monitored closely, particularly by department, tenure, job level, compensation, performance, and employee satisfaction.
 
-= 237 / 1470 × 100
-≈ 16.12%
+### 2. Active Workforce
+
+The dashboard shows **1,233 active employees**, representing the majority of the current workforce.
+
+HR management can use this metric as the baseline for:
+
+* Workforce planning
+* Hiring requirements
+* Capacity planning
+* Employee retention strategies
+* Headcount forecasting
+
+### 3. Department Workforce Concentration
+
+The workforce is highly concentrated in the **R&D department**, which accounts for approximately **65.37%** of employees.
+
+Sales represents approximately **30.34%**, while HR represents around **4.29%**.
+
+This concentration makes R&D a particularly important segment for workforce planning and retention analysis.
+
+### 4. Gender Distribution
+
+The workforce consists of approximately:
+
+* **882 Male employees — 60%**
+* **588 Female employees — 40%**
+
+The relatively balanced representation provides an opportunity to further analyze:
+
+* Gender-specific attrition
+* Promotion rates
+* Compensation
+* Career progression
+* Leadership representation
+* Employee engagement
+
+### 5. Age Distribution
+
+The workforce is concentrated primarily around the **late-20s to late-30s age range**.
+
+Employees in their **30s represent one of the largest workforce segments**, making this group particularly important for:
+
+* Career development
+* Retention programs
+* Leadership pipeline planning
+* Skill development
+* Succession planning
+
+### 6. Education Profile
+
+The workforce has a diverse educational background.
+
+| Education        | Employees |
+| ---------------- | --------: |
+| Life Sciences    |       606 |
+| Medical          |       464 |
+| Marketing        |       159 |
+| Technical Degree |       132 |
+| Other            |        82 |
+| Human Resources  |        27 |
+
+**Life Sciences** represents the largest educational group, followed by **Medical**.
+
+This information can help HR teams evaluate whether workforce skills and educational backgrounds align with organizational requirements.
+
+### 7. Age Band & Gender Analysis
+
+The **25–34** and **35–44** age bands contain the largest number of employees.
+
+This suggests that the organization has a relatively strong concentration of **early-to-mid-career professionals**.
+
+HR can use this insight to design:
+
+* Career progression programs
+* Leadership development
+* Internal mobility programs
+* Skill development initiatives
+* Retention strategies
+
+---
+
+## 🛠️ Tools & Technologies
+
+### Business Intelligence
+
+* **Microsoft Power BI**
+* Power BI Desktop
+
+### Data Preparation
+
+* **Power Query**
+* Data Cleaning
+* Data Transformation
+* Data Validation
+
+### Data Modeling
+
+* Star Schema principles
+* Relationships
+* Calculated Columns
+* Measures
+* Dimension-based analysis
+
+### Analytics
+
+* **DAX**
+* KPI Analysis
+* Segmentation
+* Workforce Demographics
+* Attrition Analysis
+
+---
+
+## 🔄 End-to-End Project Workflow
+
+```text
+Raw HR Dataset
+      ↓
+Data Profiling
+      ↓
+Data Cleaning
+      ↓
+Power Query Transformation
+      ↓
+Data Modeling
+      ↓
+Relationship Creation
+      ↓
+DAX Measures
+      ↓
+KPI Development
+      ↓
+Dashboard Design
+      ↓
+Workforce Segmentation
+      ↓
+Business Insights
+      ↓
+HR Decision Support
 ```
 
-This means approximately **16 out of every 100 employees** are
-represented as attrition cases.
+---
 
-------------------------------------------------------------------------
+## 🧹 Data Preparation Process
 
-# 🔎 Key Business Insights
+The following data preparation activities can be performed before dashboard development:
 
-## 1. Overall Workforce & Attrition
+* Removed duplicate employee records
+* Checked missing values
+* Validated employee IDs
+* Standardized categorical fields
+* Validated age values
+* Standardized department names
+* Validated education categories
+* Created age bands
+* Created income bands
+* Created performance groups
+* Created attrition flags
+* Checked relationship consistency
+* Validated KPI calculations
 
-The organization has a workforce of **1,470 employees**, of which:
+---
 
--   **1,233 employees are active**
--   **237 employees are recorded as attrition**
--   **16.12% overall attrition rate**
+## 🎨 Dashboard Design Principles
 
-The active workforce represents approximately **83.88%** of the total
-employee population.
+The dashboard was designed using a management-focused approach:
 
-### Business implication
+* Executive KPI cards at the top
+* Clear visual hierarchy
+* Consistent color palette
+* Interactive slicers
+* Minimal visual clutter
+* Business-oriented chart titles
+* Department-level comparison
+* Demographic segmentation
+* Easy-to-understand KPI presentation
 
-A 16.12% attrition rate deserves deeper diagnostic analysis. HR should
-investigate whether exits are concentrated among particular:
+---
 
--   Departments
--   Job roles
--   Age groups
--   Tenure groups
--   Income levels
--   Overtime patterns
--   Satisfaction levels
--   Promotion histories
+## 💡 Business Value
 
-------------------------------------------------------------------------
+This dashboard can help HR and management teams:
 
-## 2. Department Attrition Distribution
+✅ Monitor overall workforce health
+✅ Track employee attrition
+✅ Identify workforce concentration
+✅ Understand employee demographics
+✅ Support workforce planning
+✅ Analyze gender distribution
+✅ Understand educational composition
+✅ Identify critical workforce segments
+✅ Develop targeted retention strategies
+✅ Support data-driven HR decisions
 
-The department visual shows the following Attrition Distribution:
+---
 
-  Department     Attrition Share
-  ------------ -----------------
-  **R&D**             **56.12%**
-  **Sales**           **38.82%**
-  **HR**               **5.06%**
+## 🚀 Future Enhancements
 
-R&D represents the largest Attrition segment, followed by Sales and HR.
+### Workforce Planning
 
-### Business implication
+* Headcount forecasting
+* Hiring requirements
+* Workforce capacity
+* Retirement projections
 
-Because R&D and Sales together represent almost **95% of the
-Attrition**, workforce stability in these two departments can have a
-major effect on overall organizational performance.
+Potential risk factors:
 
+* Low job satisfaction
+* Low income
+* High overtime
+* Frequent business travel
+* Short tenure
+* Poor performance
+* Limited career progression
 
-------------------------------------------------------------------------
+### Predictive Analytics
 
-## 3. Workforce is Concentrated Around Ages 25--44
+The Power BI solution can eventually be integrated with Python/Machine Learning to build:
 
-The dashboard shows a strong concentration of employees in the **25--44
-age range**.
+* Employee Attrition Prediction
+* Employee Risk Scoring
+* Workforce Demand Forecasting
+* Employee Segmentation
+* Retention Recommendation Models
 
-  Age Band         Female   Male     Total
-  -------------- -------- ------ ---------
-  **25--34**          217    337   **554**
-  **35--44**          196    309   **505**
-  **45--54**          113    132   **245**
-  **Under 25**         37     60    **97**
-  **Over 55**          25     44    **69**
+---
 
-Employees aged **25--44 total 1,059 employees**, representing
-approximately **72.0% of the workforce**.
+## 📁 Suggested GitHub Repository Structure
 
-### Business implication
-
-The organization is heavily dependent on early- and mid-career talent.
-
-HR could therefore focus on:
-
--   Career development
--   Internal mobility
--   Promotion opportunities
--   Compensation benchmarking
--   Training programs
--   Work-life balance
--   Employee engagement
-
-for these age groups.
-
-------------------------------------------------------------------------
-
-## 4. Gender Distribution
-
-The dashboard shows:
-
--   **Male: 882 employees --- 60%**
--   **Female: 588 employees --- 40%**
-
-This represents a **60:40 male-to-female workforce distribution**.
-
-### Business implication
-
-The gender view provides a useful foundation for deeper analysis of:
-
--   Attrition rate by gender
--   Promotion rate by gender
--   Compensation differences
--   Job-role distribution
--   Career progression
--   Workforce representation
-
-The current dashboard shows workforce composition; a future version
-should compare **attrition rates**, rather than only employee counts, by
-gender.
-
-------------------------------------------------------------------------
-
-## 5. Education Profile
-
-The workforce has the following education distribution:
-
-  Education                Employees
-  ---------------------- -----------
-  **Life Sciences**          **606**
-  **Medical**                **464**
-  **Marketing**              **159**
-  **Technical Degree**       **132**
-  **Other**                   **82**
-  **Human Resources**         **27**
-
-Life Sciences and Medical backgrounds together account for:
-
-**606 + 464 = 1,070 employees**
-
-This represents approximately **72.8% of the total workforce**.
-
-### Business implication
-
-The workforce has a strong concentration in specialized educational
-backgrounds.
-
-HR can use this information for:
-
--   Workforce capability planning
--   Skill-gap analysis
--   Internal mobility
--   Training and development
--   Hiring strategy
--   Succession planning
-
-------------------------------------------------------------------------
-
-# 📊 Dashboard Visual Analysis
-
-## KPI Cards
-
-The top section provides five executive KPIs:
-
-1.  Total Employee Count
-2.  Attrition Count
-3.  Attrition %
-4.  Active Employees
-5.  Average Age
-
-This provides an effective **executive summary layer** before users move
-into detailed visual analysis.
-
-------------------------------------------------------------------------
-
-## Department Analysis
-
-The department chart provides a quick understanding of workforce
-concentration.
-
-Recommended enhancement:
-
--   Employee Count
--   Attrition Count
--   Attrition Rate
--   Active Employee Count
-
-should be available together for department-level comparison.
-
-------------------------------------------------------------------------
-
-## Age Distribution
-
-The age histogram shows the highest employee concentration around the
-**late 20s to late 30s**.
-
-This suggests a relatively young-to-mid-career workforce profile.
-
-Recommended enhancement:
-
-Add an **Attrition Rate by Age Band** visual to determine whether
-younger employees actually have higher turnover.
-
-------------------------------------------------------------------------
-
-## Gender Analysis
-
-The gender donut chart provides a quick workforce composition view.
-
-Recommended enhancement:
-
-Replace or complement the current chart with:
-
-``` text
-Gender
-├── Employee Count
-├── Attrition Count
-└── Attrition Rate
-```
-
-This makes the analysis more actionable.
-
-------------------------------------------------------------------------
-
-## Education Analysis
-
-The horizontal bar chart clearly identifies the largest educational
-groups.
-
-The visualization is particularly useful for workforce planning because
-it highlights the organization's dominant talent backgrounds.
-
-------------------------------------------------------------------------
-
-# 🧠 Recommended Advanced HR Analysis
-
-The current dashboard is primarily **descriptive analytics**.
-
-To make the project stronger for a professional portfolio, extend it
-into **diagnostic and predictive analytics**.
-
-### Attrition Drivers
-
-Analyze attrition against:
-
--   Job Role
--   Department
--   Age
--   Gender
--   Education
--   Years at Company
--   Years in Current Role
--   Monthly Income
--   Job Level
--   Overtime
--   Job Satisfaction
--   Environment Satisfaction
--   Work-Life Balance
--   Business Travel
--   Distance From Home
--   Years Since Last Promotion
--   Performance Rating
-
-### Recommended Questions
-
-**Who is leaving?**
-
--   Which age group has the highest attrition?
--   Which job roles have the highest attrition?
--   Is attrition concentrated among new employees?
-
-**Why are employees leaving?**
-
--   Does overtime increase attrition?
--   Does low job satisfaction correlate with attrition?
--   Does lower compensation correlate with attrition?
--   Does lack of promotion contribute to exits?
-
-**Where should HR act?**
-
--   Which departments require retention programs?
--   Which employee segments are high-risk?
--   Which roles require stronger career development?
--   Which groups need compensation or engagement interventions?
-
-------------------------------------------------------------------------
-
-# 🧮 Recommended DAX Measures
-
-### Total Employees
-
-``` dax
-Total Employees =
-COUNTROWS(Employee)
-```
-
-### Attrition Count
-
-``` dax
-Attrition Count =
-CALCULATE(
-    COUNTROWS(Employee),
-    Employee[Attrition] = "Yes"
-)
-```
-
-### Active Employees
-
-``` dax
-Active Employees =
-CALCULATE(
-    COUNTROWS(Employee),
-    Employee[Attrition] = "No"
-)
-```
-
-### Attrition Rate
-
-``` dax
-Attrition Rate =
-DIVIDE(
-    [Attrition Count],
-    [Total Employees],
-    0
-)
-```
-
-Format this measure as **Percentage**.
-
-### Average Age
-
-``` dax
-Average Age =
-AVERAGE(Employee[Age])
-```
-
-### Department Attrition Count
-
-``` dax
-Department Attrition Count =
-CALCULATE(
-    [Attrition Count],
-    ALLEXCEPT(
-        Employee,
-        Employee[Department]
-    )
-)
-```
-
-### Department Attrition Rate
-
-``` dax
-Department Attrition Rate =
-DIVIDE(
-    [Department Attrition Count],
-    [Total Employees],
-    0
-)
-```
-
-------------------------------------------------------------------------
-
-# 🏗️ Power BI Dashboard Architecture
-
-## Page 1 --- HR Workforce Overview
-
-### KPI Layer
-
--   Total Employees
--   Attrition Count
--   Attrition %
--   Active Employees
--   Average Age
-
-### Workforce Layer
-
--   Employee Distribution by Department
--   Employee Distribution by Age
--   Employee Distribution by Gender
--   Employee Count by Education
--   Age Band & Gender Distribution
-
-### Filter Layer
-
--   Education
-
-------------------------------------------------------------------------
-
-## 🚀 Recommended Future Dashboard Pages
-
-### Page 2 --- Attrition Analysis
-
--   Attrition Rate by Department
--   Attrition Rate by Job Role
--   Attrition Rate by Age Band
--   Attrition Rate by Gender
--   Attrition by Education
--   Attrition Trend
-
-### Page 3 --- Attrition Drivers
-
--   Attrition vs Overtime
--   Attrition vs Job Satisfaction
--   Attrition vs Monthly Income
--   Attrition vs Years at Company
--   Attrition vs Promotion
--   Attrition vs Work-Life Balance
-
-### Page 4 --- Employee Segmentation
-
--   High-risk employee segments
--   Tenure groups
--   Job-level analysis
--   Income bands
--   Performance groups
--   Business travel segments
-
-------------------------------------------------------------------------
-
-# 🎨 Dashboard Design Approach
-
-The dashboard uses an executive-style layout:
-
-``` text
-┌───────────────────────────────────────────────────────┐
-│              HR ANALYTICS DASHBOARD                   │
-│                                    Education Filter  │
-├───────────────────────────────────────────────────────┤
-│ Total │ Attrition │ Attrition % │ Active │ Avg Age   │
-├───────────────────┬─────────────────┬────────────────┤
-│ Department        │ Age Distribution│ Gender         │
-│ Distribution      │                 │ Distribution   │
-├───────────────────┴─────────────────┴────────────────┤
-│ Education Distribution │ Age Band & Gender           │
-└───────────────────────────────────────────────────────┘
-```
-
-The design prioritizes:
-
--   Executive KPIs at the top
--   Demographic analysis in the middle
--   Workforce segmentation at the bottom
--   Minimal navigation complexity
--   Consistent visual formatting
-
-------------------------------------------------------------------------
-
-# 🛠️ Tools & Technologies
-
-  Technology          Purpose
-  ------------------- ------------------------------------------
-  **Power BI**        Dashboard development and visualization
-  **DAX**             KPI calculations and analytical measures
-  **Power Query**     Data cleaning and transformation
-  **Data Modeling**   Relationships and analytical structure
-  **Excel / CSV**     Data source and data preparation
-
-------------------------------------------------------------------------
-
-# 📂 Recommended GitHub Repository Structure
-
-``` text
-HR-Analytics-PowerBI/
+```text
+HR-Workforce-Analytics/
 │
-├── README.md
+├── Dataset/
+│   └── employee_data.csv
 │
-├── Dashboard/
-│   └── HR_Analytics_Dashboard.pbix
-│
-├── Data/
-│   └── HR_Employee_Data.csv
+├── PowerBI/
+│   └── HR_Workforce_Dashboard.pbix
 │
 ├── Screenshots/
-│   └── HR Dashboard.PNG
+│   └── HR_Workforce_Dashboard.png
+│
+├── Documentation/
+│   ├── Business_Requirements.md
+│   ├── KPI_Definitions.md
+│   └── Data_Dictionary.md
 │
 ├── DAX/
-│   └── HR_KPI_Measures.txt
+│   └── HR_Measures.dax
 │
-└── Documentation/
-    └── HR_Analytics_Report.pdf
+└── README.md
 ```
 
-------------------------------------------------------------------------
+---
 
-# 📌 Data Quality & Dashboard Improvements
+## 📌 Project Highlights
 
-Before presenting this dashboard as an executive HR solution, the
-following improvements are recommended:
+**Domain:** Human Resources / Workforce Analytics
 
-### 1. Correct Department Chart Label
+**Project Type:** Business Intelligence & Data Analytics
 
-Change:
+**Primary Tool:** Microsoft Power BI
 
-**Attrition by Department**
+**Key Skills:** Power Query, DAX, Data Modeling, KPI Development, Data Visualization, Workforce Analytics
 
-to:
+**Key Business Areas:** Workforce Planning, Employee Attrition, Demographics, Diversity, Employee Segmentation
 
-**Employee Distribution by Department**
+---
 
-unless the measure is changed to actual department attrition.
+## 👨‍💻 Author
 
-### 2. Add Department Attrition Rate
+**Lalit Shishodia**
 
-A large department may naturally have more attrition cases simply
-because it has more employees.
+Data Analyst | Power BI | SQL | Python | Data Analytics | Machine Learning
 
-Always compare:
+This project demonstrates the application of **business intelligence and data analytics techniques to solve real-world HR workforce management problems**.
 
-``` text
-Attrition Count
-        ÷
-Department Employee Count
-        × 100
-```
+---
 
-### 3. Add Attrition Trend
+## ⭐ If You Like This Project
 
-Add a monthly or quarterly trend to understand whether attrition is:
+If you find this project useful, consider giving the repository a ⭐ and connecting with me for discussions around **Power BI, SQL, Data Analytics, and Machine Learning**.
 
--   Increasing
--   Decreasing
--   Stable
--   Seasonal
-
-### 4. Add Attrition Drivers
-
-Include overtime, tenure, job satisfaction, compensation, promotion,
-business travel, and work-life balance.
-
-### 5. Add Drill-through
-
-Create an employee-segment drill-through page for HR users to
-investigate high-risk groups without overcrowding the main dashboard.
-
-### 6. Improve Chart Titles
-
-Use precise business terminology:
-
--   Employee Distribution by Department
--   Employee Distribution by Gender
--   Employee Count by Age
--   Employee Count by Education
--   Employee Count by Age Band & Gender
-
-This makes the dashboard easier for business users to interpret.
-
-------------------------------------------------------------------------
-
-# 💼 Business Impact
-
-This dashboard can help HR teams:
-
--   Monitor workforce health
--   Track employee attrition
--   Understand workforce demographics
--   Identify major workforce segments
--   Support workforce planning
--   Prioritize retention initiatives
--   Identify areas requiring deeper investigation
--   Build data-driven HR strategies
-
-The dashboard provides the **descriptive layer** of HR analytics. Adding
-attrition drivers and predictive modeling can transform it into a
-complete **HR decision-support solution**.
-
-------------------------------------------------------------------------
-
-# ⭐ Portfolio Value
-
-This project demonstrates practical skills in:
-
-**Power BI \| DAX \| Power Query \| Data Modeling \| HR Analytics \|
-Workforce Analytics \| Attrition Analysis \| KPI Development \| Data
-Visualization \| Business Intelligence \| Business Insights**
-
-It is particularly useful as a portfolio project because it demonstrates
-that the analysis goes beyond simply creating charts: the dashboard
-connects **KPIs → workforce patterns → business interpretation →
-recommended HR actions**.
-
-------------------------------------------------------------------------
-
-# 📌 Conclusion
-
-The HR Analytics Dashboard provides a clear overview of a
-**1,470-employee workforce** with **237 attrition cases** and a reported
-**16.12% attrition rate**.
-
-The analysis shows that:
-
--   **R&D represents 56.12%** of the workforce.
--   **Sales represents 38.82%**.
--   **25--44-year-old employees represent approximately 72%** of the
-    workforce.
--   The workforce is **60% male and 40% female**.
--   **Life Sciences and Medical backgrounds represent approximately
-    72.8%** of employees.
--   The organization has **1,233 active employees**.
-
-The most valuable next step is to move beyond workforce composition and
-determine **which employee segments have the highest attrition and
-why**.
-
-That can be achieved by combining department, job role, age, tenure,
-compensation, overtime, satisfaction, promotion, and performance data
-into a deeper **attrition-driver and employee-retention analysis**.
-
-------------------------------------------------------------------------
 
 ## 👨‍💻 Project Skills
 
